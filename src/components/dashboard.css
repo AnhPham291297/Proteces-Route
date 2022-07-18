@@ -1,0 +1,12 @@
+.dash-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.dash-item {
+  background-color: aliceblue;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}

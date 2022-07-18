@@ -1,38 +1,101 @@
-.App {
+header {
+  /* display: flex;
+  align-items: center; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  height: 100%;
+  padding: 24px 4%;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+  color: rgb(15, 15, 182);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 450px;
+  min-height: 400px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 5px #ccc;
+  color: #555;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h4-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.span_input {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200px;
+  max-width: 200px;
+  padding: 4px 12px;
+  border: 1px solid #bfc9d9;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-convert {
+  width: 93%;
+  display: block;
+  margin: 25px auto;
+  height: 50px;
+  padding: 10px 0;
+  border-radius: 0;
+  background-color: dodgerblue;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="color"] {
+  margin-right: 8px;
+  -webkit-appearance: none;
+  border: none;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  width: 14px;
+  height: 14px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid #bfc9d9;
+  border-radius: 4px;
+  padding: 0;
+}
+
+input[type="text"] {
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.input-value-rgb {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  /* height: 30px; */
+  padding: 10px 5px;
+  border: 1px solid #eee;
 }
