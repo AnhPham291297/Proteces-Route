@@ -6,7 +6,6 @@ import Header from "./layout/Header";
 import Dashboard from "./components/Dashboard";
 import { AppProvider } from "./Context/Context";
 import RequireAuth from "./RequireAuth";
-import Footer from "./layout/Footer";
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
     </AppProvider>
   );
 }
